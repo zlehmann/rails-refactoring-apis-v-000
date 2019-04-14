@@ -16,6 +16,7 @@ class GithubRepo
     user_json = JSON.parse(user_response.body)
     session[:username] = user_json["login"]
 
+    debugger
     redirect_to '/'
   end
 
